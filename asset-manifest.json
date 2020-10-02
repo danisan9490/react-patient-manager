@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-patient-manager/static/css/main.7b01c009.chunk.css",
+    "main.js": "/react-patient-manager/static/js/main.0d79c669.chunk.js",
+    "main.js.map": "/react-patient-manager/static/js/main.0d79c669.chunk.js.map",
+    "runtime-main.js": "/react-patient-manager/static/js/runtime-main.e91b43f8.js",
+    "runtime-main.js.map": "/react-patient-manager/static/js/runtime-main.e91b43f8.js.map",
+    "static/js/2.f0218854.chunk.js": "/react-patient-manager/static/js/2.f0218854.chunk.js",
+    "static/js/2.f0218854.chunk.js.map": "/react-patient-manager/static/js/2.f0218854.chunk.js.map",
+    "index.html": "/react-patient-manager/index.html",
+    "precache-manifest.db042e4ba19ca4ed55109c5b16d4ec9f.js": "/react-patient-manager/precache-manifest.db042e4ba19ca4ed55109c5b16d4ec9f.js",
+    "service-worker.js": "/react-patient-manager/service-worker.js",
+    "static/css/main.7b01c009.chunk.css.map": "/react-patient-manager/static/css/main.7b01c009.chunk.css.map",
+    "static/js/2.f0218854.chunk.js.LICENSE.txt": "/react-patient-manager/static/js/2.f0218854.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e91b43f8.js",
+    "static/js/2.f0218854.chunk.js",
+    "static/css/main.7b01c009.chunk.css",
+    "static/js/main.0d79c669.chunk.js"
+  ]
+}
