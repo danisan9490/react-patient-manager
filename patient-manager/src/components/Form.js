@@ -100,7 +100,7 @@ const Form = ({ createappointment }) => {
           className="u-full-width button-primary"
         >Create appointment</button>
       </form>
-      {error ? <p className="alert-error ">All files are require</p> : null}
+      {error ? <p className="alert-error ">All files are required</p> : null}
     </Fragment>
   )
 }
