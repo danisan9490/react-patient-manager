@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import './App.css';
-import Appointments from './components/Appointments';
+import Appointment from './components/Appointment';
 import Form from './components/Form';
 
 function App() {
-  const [appointmets, setAppoinments] = useState([]);
+  const [appointments, setAppoinments] = useState([]);
 
-  const createAppointment = appointmet => {
-    setAppoinments([...appointmets, appointmet])
+  const createappointment = appointment => {
+    setAppoinments([...appointments, appointment])
+  }
+
+  const deleteAppointment = id => {
+    console.log(id)
   }
 
   return (
@@ -17,11 +21,20 @@ function App() {
       <div className="row">
         <div className="one-half column">
           <Form
-            createAppointment={createAppointment}
+            createappointment={createappointment}
           />
         </div>
         <div className="one-half column">
-          <Appointments />
+          <h2>Appointments</h2>
+
+          {appointments.map(appointment => (
+            <Appointment
+              key={appointment.id}
+              appointment={appointment}
+              deleteAppointment={deleteAppointment}
+            />
+          ))}
+
         </div>
       </div>
     </div>

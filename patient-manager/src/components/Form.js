@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-const Form = ({ createAppointment }) => {
+const Form = ({ createappointment }) => {
 
-  const [appointment, setAppointment] = useState({
+  const [appointment, setappointment] = useState({
     pet: '',
     owner: '',
     date: '',
@@ -16,14 +16,14 @@ const Form = ({ createAppointment }) => {
 
 
   const handleChange = (e) => {
-    setAppointment({
+    setappointment({
       ...appointment,
       [e.target.name]: e.target.value
     })
     // console.log(e.target.value)
   }
 
-  const submitAppointment = (e) => {
+  const submitappointment = (e) => {
     e.preventDefault();
     // validation
     if (pet.trim() === '' || owner.trim() === '' || date.trim() === '' || time.trim() === '' || symptoms.trim() === '') {
@@ -32,8 +32,8 @@ const Form = ({ createAppointment }) => {
     }
     setError(false);
     appointment.id = uuidv4();
-    createAppointment(appointment);
-    setAppointment({
+    createappointment(appointment);
+    setappointment({
       pet: '',
       owner: '',
       date: '',
@@ -47,7 +47,7 @@ const Form = ({ createAppointment }) => {
     <Fragment>
       <h2>Form</h2>
       <form
-        onSubmit={submitAppointment}
+        onSubmit={submitappointment}
       >
         <label>Pet Name</label>
         <input
@@ -98,7 +98,7 @@ const Form = ({ createAppointment }) => {
         <button
           type="submit"
           className="u-full-width button-primary"
-        >Create Appointment</button>
+        >Create appointment</button>
       </form>
       {error ? <p className="alert-error ">All files are require</p> : null}
     </Fragment>
