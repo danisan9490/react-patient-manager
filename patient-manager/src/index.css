@@ -41,6 +41,10 @@ h1, h2 {
   font-weight: bold;
 }
 
+form {
+  margin: 20px;
+}
+
 label {
   color: white;
 }
@@ -50,7 +54,7 @@ input[type="date"], input[type="time"] {
   padding: 6px 10px;
   background-color: #fff;
   border: 1px solid #D1D1D1;
-  border-radius: 4px;
+  border-radius: 5px;
   box-shadow: none;
   box-sizing: border-box;
 }
@@ -88,6 +92,8 @@ input[type="date"], input[type="time"] {
 }
 
 .alert-error {
+  margin: 20px;
+  border-radius: 5px;
   background-color: white;
   color: red;
   padding: 1rem;
