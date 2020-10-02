@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState, useEffect } from 'react';
 import Appointment from './components/Appointment';
 import Form from './components/Form';
 
 function App() {
+
+  // check local storage
+  let localStorageAppointments = JSON.parse(localStorage.getItem('appointments'));
+  if (!localStorageAppointments) {
+    localStorageAppointments = [];
+  }
+
   const [appointments, setAppoinments] = useState([]);
+
+  useEffect(() => {
+    let localStorageAppointments = JSON.parse(localStorage.getItem('appointments'));
+    if (localStorageAppointments) {
+      localStorage.setItem('appointments', JSON.stringify(appointments));
+      console.log(appointments)
+
+    } else {
+      localStorage.setItem('appointments', JSON.stringify([]));
+    }
+  }, [appointments])
 
   const createappointment = appointment => {
     setAppoinments([...appointments, appointment])
